@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object</title>
+</head>
+<body>
+<script>
+
+    //Parameter Construction Function
+    function Person(firstName, lastName, age){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.sayHello = function (name) {
+            console.info(`Hello ${name}, my name is ${this.firstName} and I am ${this.age} years old`);
+        }
+    }
+
+    const aaa = new Person("Bbb", "Ccc", "21");
+    aaa.sayHello("Ddd");
+
+    const eee = new Person("Fff", "Ggg", "22");
+    eee.sayHello("Hhh");
+
+    console.log(aaa);
+    console.log(eee);
+
+</script>
+</body>
+</html>
